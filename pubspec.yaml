@@ -1,0 +1,49 @@
+name: konya_akilli_bisiklet_haritasi
+description: Konya Akıllı Bisiklet Haritası Uygulaması - Selçuk Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Uygulamaları
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Harita için OpenStreetMap
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  
+  # Konum servisleri
+  geolocator: ^13.0.1
+  permission_handler: ^11.3.1
+  
+  # Durum yönetimi
+  flutter_riverpod: ^2.5.1
+  
+  # CSV dosya okuma
+  csv: ^6.0.0
+  
+  # HTTP istekleri (ileride API kullanımı için)
+  http: ^1.2.0
+  
+  # UI yardımcıları
+  cupertino_icons: ^1.0.6
+  
+  # Text-to-Speech (Sesli yönlendirme)
+  flutter_tts: ^4.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/bisiklet_tamir_bakim_istasyon_konumlari.csv
+    - assets/2024_bisiklet_park_alanlari_istasyonlari_konumlar.csv
+    - assets/2024-paylasimli-kiralik-bisiklet-istasyon-konumlari.csv
+    - assets/konya_logo.png
+
